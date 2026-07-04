@@ -699,11 +699,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-4">
-              <div className="aspect-[3/4] bg-slate-800 rounded-2xl overflow-hidden relative shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
-                  alt="CEO" className="w-full h-full object-cover opacity-70" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
+              <div className="aspect-[3/4] bg-slate-800 rounded-2xl overflow-hidden relative shadow-2xl flex flex-col justify-end">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-28 h-28 rounded-full bg-slate-700 flex items-center justify-center">
+                    <Users className="w-14 h-14 text-slate-500" />
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/20 to-transparent" />
+                <div className="relative p-6">
                   <div className="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-1">Founder & CEO</div>
                   <h3 className="text-xl font-black text-white">Muhammad Zahid</h3>
                   <p className="text-slate-400 text-xs">ALHAMD BUILDERS, Khurrianwala</p>
